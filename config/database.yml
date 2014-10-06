@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: resume-site_production
-  username: resume-site
-  password: <%= ENV['RESUME-SITE_DATABASE_PASSWORD'] %>
+  username: 
+  password: 
