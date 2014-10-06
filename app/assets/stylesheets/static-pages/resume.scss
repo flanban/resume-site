@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: #fbfbfb;
+  width: 100%;
+  margin: auto;
+  padding: 90px;
+  color: #595959;
+  max-width: 1280px;
+}
+
+a {
+  text-decoration: none;
+  color: #ddd;
+}
+
+h1 {
+  font-size: 54px;
+  line-height: 1.4;
+  font-family: 'ACaslonPro-Regular', georgia;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.4;
+  margin-top: 36px;
+  margin-bottom: 4px;
+  font-family: 'ACaslonPro-Regular', georgia;
+}
+
+h3 {
+  font-size: 20px;
+  font-style: italic;
+  text-transform: lowercase;
+  font-family: 'ACaslonPro-Italic', georgia;
+}
+
+h4 {
+  font-size: 11px;
+  text-transform: uppercase;
+  margin: 0px 0 2px 0;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+i {
+  font-style: italic;
+}
+
+small {
+  font-size: 90%;
+  line-height: 1;
+}
+
+.big-body {
+  font-size: 120%;
+  line-height: 1.8;
+  a {
+    color: #555;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*  Individual styles  */
+
+header {
+  position: relative;
+  margin-bottom: 120px;
+  ul {
+    position: absolute;
+    right: 0;
+    top: 37px;
+    text-align: right;
+    font-size: 11px;
+    line-height: 1.7;
+  }
+}
+
+@media (max-width: 730px) {
+  header h3 {
+    max-width: 270px;
+  }
+}
+
+#summary p {
+  line-height: 1.4;
+  font-size: 18px;
+}
+
+.job-container {
+  clear: both;
+  margin-bottom: 32px;
+  > *:nth-child(-n+2) {
+    padding-right: 20px;
+  }
+}
+
+.job-info, .job-description, .job-images {
+  float: left;
+}
+
+.job-info {
+  width: 25%;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.job-company {
+  text-transform: uppercase;
+  span {
+    text-transform: capitalize;
+  }
+}
+
+.job-date, .job-company span {
+  color: #b3b3b3;
+}
+
+.job-description {
+  width: 45%;
+  font-size: 14px;
+}
+
+.job-images {
+  position: relative;
+  width: 30%;
+  height: 140px;
+}
+
+.rsCaption a {
+  color: #777;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+#education {
+  float: left;
+  clear: both;
+  width: 35%;
+  h5 {
+    max-width: 200px;
+    margin-bottom: 6px;
+  }
+}
+
+#skills {
+  float: left;
+  width: 65%;
+  ul {
+    float: left;
+    padding-right: 64px;
+    width: 33%;
+  }
+  li {
+    line-height: 1.6;
+    &:nth-child(n+2) {
+      list-style-type: initial;
+    }
+  }
+}
+
+#what-he-do {
+  position: relative;
+  top: -16px;
+  left: 16px;
+}
