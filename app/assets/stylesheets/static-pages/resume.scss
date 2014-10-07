@@ -1,4 +1,6 @@
-.resume {
+@import "breakpoints";
+
+body.resume {
   header {
     position: relative;
     margin-bottom: 120px;
@@ -10,6 +12,13 @@
       font-size: 13px;
       line-height: 1.7;
     }
+    @media(max-width:$breakpoint-b) {
+      ul {
+        position:relative;
+        left:0;
+        text-align:left;
+      }
+    }
   }
 
   @media (max-width: 730px) {
@@ -17,7 +26,6 @@
       max-width: 270px;
     }
   }
-
   #summary p {
     line-height: 1.4;
     font-size: 18px;
@@ -42,6 +50,10 @@
     width: 25%;
     font-size: 14px;
     line-height: 1.4;
+    margin-bottom:12px;
+    @media(max-width:$breakpoint-d) {
+      width:70%;
+    }
   }
 
   .job-company {
@@ -58,6 +70,9 @@
   .job-description {
     width: 45%;
     font-size: 14px;
+    @media(max-width:$breakpoint-d) {
+      width:70%;
+    }
   }
 
   .job-images {
@@ -79,6 +94,12 @@
       max-width: 200px;
       margin-bottom: 6px;
     }
+    @media(max-width:$breakpoint-d) {
+      width:100%;
+      h5 {
+        max-width:100%;
+      }
+    }
   }
 
   #skills {
@@ -95,6 +116,9 @@
       &:nth-child(n+2) {
         list-style-type: initial;
       }
+    }
+    @media(max-width:$breakpoint-d) {
+      width:100%;
     }
   }
 

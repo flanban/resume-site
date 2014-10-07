@@ -1,3 +1,9 @@
+@import "breakpoints";
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   background: #fbfbfb;
@@ -6,10 +12,10 @@ body {
   padding: 90px;
   color: #595959;
   max-width: 1280px;
-  min-width:454px;
-}
-* {
-  box-sizing: border-box;
+  position:relative;
+  @media(max-width:$breakpoint-b) {
+    padding:40px;
+  }
 }
 
 a {
