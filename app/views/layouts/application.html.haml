@@ -1,18 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>John Fuller</title>
-  <link href='http://fonts.googleapis.com/css?family=Lato:300,300italic' rel='stylesheet' type='text/css'>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body class="<%= "#{controller.action_name} #{@body_class}".strip %> clearfix">
-
-<%= yield %>
-
-</body>
-<script>
+!!!
+%html
+  %head
+    %title John Fuller
+    %meta{:content => "initial-scale=1, maximum-scale=1", :name => "viewport"}
+    %link{:href => "http://fonts.googleapis.com/css?family=Lato:300,300italic", :rel => "stylesheet", :type => "text/css"}
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body{:class => "#{"#{controller.action_name} #{@body_class}".strip} clearfix"}
+    = yield
+  :javascript
     jQuery(document).ready(function($) {
         $(".resume-slider-first").royalSlider({
           controlNavigation:'none',
@@ -40,5 +37,3 @@
           loop:true
         });
     });
-</script>
-</html>
