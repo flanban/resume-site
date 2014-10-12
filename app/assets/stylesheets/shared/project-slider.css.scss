@@ -24,4 +24,18 @@
       position:absolute;
     }
   }
+  .close-slider {
+    position:fixed;
+    top:32px;
+    right:90px;
+    opacity:.4;
+    display:block;
+    &:hover {
+      opacity:1;
+    }
+    -webkit-transition: opacity 500ms;
+   -moz-transition: opacity 500ms;
+   -o-transition: opacity 500ms;
+   transition: opacity 500ms;
+  }
 }
