@@ -1,9 +1,14 @@
 body.index {
-  h5 {
+  .project-link {
     font-size:12px;
     text-transform:uppercase;
   }
   p {
 //    font-size:12px;
+  }
+  .featured-project {
+    width:50%;
+    float:left;
+    padding-right:180px;
   }
 }

@@ -1,7 +1,18 @@
+function initSlider() {
+  $('.project-slider').royalSlider({
+    controlNavigation:'none',
+    imageScaleMode:'fill',
+    imageScalePadding:0,
+    imageAlignCenter:false,
+    slidesSpacing:0,
+    globalCaption:true,
+    loop:true
+  });
+}
 $( document ).ready(function() {
 
   function showSlider() {
-    $('#project-slider').css('margin-top', $('body').scrollTop()).slideDown();
+    $('#project-slider').css({'margin-top': $('body').scrollTop()}).slideDown();
     $('html, body').css('overflow', 'hidden');
   }
   function hideSlider() {
@@ -14,7 +25,7 @@ $( document ).ready(function() {
     
   }
   function initSlider() {
-    $('.resume-slider').royalSlider({
+    $('.project-slider').royalSlider({
       controlNavigation:'none',
       imageScaleMode:'fill',
       imageScalePadding:0,
@@ -24,11 +35,8 @@ $( document ).ready(function() {
       loop:true
     });
   }
-  function depopulateSlider() {
-
-  }
+  
   function sliderStart() {
-    initSlider();
     showSlider();
   }
   function sliderEnd() {

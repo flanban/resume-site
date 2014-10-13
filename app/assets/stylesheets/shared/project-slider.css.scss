@@ -1,12 +1,21 @@
 #project-slider {
   position:absolute;
-  display:none;
   top:0;
   left:0;
   width:100%;
   height:100%;
   background:#222;
   padding: 0 90px;
+  display:none;
+//  margin-left:-100%;
+   -webkit-transition: margin 500ms;
+  -moz-transition: margin 500ms;
+  -o-transition: margin 500ms;
+  transition: margin 500ms;
+  .project-slider {
+    height:300px;
+    width:auto;
+  }
   &, h2 {
     color:#efefef;
   }

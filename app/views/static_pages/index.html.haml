@@ -6,23 +6,19 @@
   %p With a dedicated eye towards learning and improvement, I use my professional visual and UI/UX design experiences to help guide my implementation of front-end code in a manner that compliments the design’s intentions, while remaining cohesive with the backend technologies used.
   
 %h2 Resume
-%h6 
-  =link_to('view resume', static_pages_resume_path)
-
+%p=link_to('go to resume', static_pages_resume_path)
+%p=link_to('download pdf version', '#')
 %h2 featured projects
-%h5(data-project-name="IAB, Athena") IAB, Athena
-=link_to 'IAB, Athena', { :controller => "projects", :action => "iab" }, :remote => true, :class => 'project-link'
+.featured-project
+  =link_to 'IAB, Athena', { :controller => "projects", :action => "iab" }, :remote => true, :class => 'project-link'
+  %p  Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+.featured-project
+  =link_to 'Society of News Design', { :controller => "projects", :action => "sbnu" }, :remote => true, :class => 'project-link'
+  %p 'SB Nation pushes the boundaries of a news website. It is beautiful and visually compelling without gimmicks.'
 
-%p  Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-%h5 Society of News Design
-=link_to 'Society of News Design', { :controller => "projects", :action => "sbnu" }, :remote => true, :class => 'project-link'
-%p Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-
-%h2 recent projects
-%h5 vakko
+%h2.clear-b recent projects
 =link_to 'Vakko', { :controller => "projects", :action => "vakko" }, :remote => true, :class => 'project-link'
 %p Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-%h5 nate mcgarigal
 =link_to 'Nate Mcgarigal', { :controller => "projects", :action => "nate" }, :remote => true, :class => 'project-link'
 %p Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
 

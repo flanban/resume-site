@@ -98,7 +98,9 @@ p {
   margin-bottom: 12px;
 }
 
-
+.clear-b {
+  clear:both;
+}
 .clearfix:after {
   content: "";
   display: table;
