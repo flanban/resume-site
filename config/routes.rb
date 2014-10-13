@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'projects/vakko'
+
+  get 'projects/iab'
+  get 'projects/sbnu'
+  get 'projects/nate'
+  get 'projects/vakko'
+
   root 'static_pages#index'
   
   get 'static_pages/index'

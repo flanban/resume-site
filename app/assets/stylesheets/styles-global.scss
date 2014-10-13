@@ -3,7 +3,6 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Lato', sans-serif;
   background: #fbfbfb;
@@ -32,7 +31,15 @@ body {
        }
      }
    }
-
+   #what-he-do {
+     position: relative;
+     top: -16px;
+     left: 16px;
+   }
+   #summary p {
+     line-height: 1.4;
+     font-size: 18px;
+   }
    @media (max-width: 730px) {
      header h3 {
        max-width: 270px;
@@ -41,6 +48,7 @@ body {
   @media(max-width:$breakpoint-b) {
     padding:40px;
   }
+  
 }
 
 a {
