@@ -1,3 +1,5 @@
+@import "breakpoints";
+
 body.index {
   .project-link {
     font-size:12px;
@@ -10,5 +12,34 @@ body.index {
     width:50%;
     float:left;
     padding-right:180px;
+    @media(max-width:$breakpoint-e) {
+      padding-right:90px;
+    }
+    @media(max-width:$breakpoint-c) {
+      padding-right:45px;
+    }
+    @media(max-width:$breakpoint-b) {
+      padding-right:45px;
+      width:100%;
+    }
+  }
+  .recent-project {
+    clear:both;
+    width:100%;
+    @media(min-width:$breakpoint-e) {
+      width:70%;
+    }
+    img {
+      width:33%;
+      float:left;
+      margin-right:32px;
+      margin-bottom:40px;
+      @media(max-width:$breakpoint-c) {
+        width:50%;
+      }
+      @media(max-width:$breakpoint-b) {
+        display:none;
+      }
+    }
   }
 }
