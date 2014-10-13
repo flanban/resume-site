@@ -4,29 +4,32 @@
   %h2 Summary
   %p Professionally, I’ve enjoyed six years working with at-scale digital publishing brands. Currently, I work on contracts and freelance projects. At my various professional roles I've worked as either a designer, a frontend or a mix of the two. Having a fine arts background, combined with a degree in print design, plus years pursuing optimal frontend methods while happily stumbling through rails apps; I've wound up with an interestingly rounded skill set, bridging design and development.
   %p With a dedicated eye towards learning and improvement, I use my professional visual and UI/UX design experiences to help guide my implementation of front-end code in a manner that compliments the design’s intentions, while remaining cohesive with the backend technologies used.
-  
-%h2 Resume
-%p=link_to('go to resume', static_pages_resume_path)
-%p=link_to('download pdf version', '#')
+
+#resume
+  %h2 Resume
+  =link_to('go to resume', static_pages_resume_path)
+  %span or
+  =link_to('download as pdf', '#')
 #featured-projects.clearfix
   %h2 featured projects
   .featured-project
-    =link_to 'IAB, Athena', { :controller => "projects", :action => "iab" }, :remote => true, :class => 'project-link'
-    %p  Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
+    =link_to 'Athena, Ad Unit', { :controller => "projects", :action => "iab" }, :remote => true, :class => 'project-link'
+    =link_to("The Internet Advertising Bureau Features VOX's Athena Unit",{ :controller => "projects", :action => "iab" }, :remote => true, :class => 'project-link')
+    %p Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
   .featured-project
-    =link_to 'Society of News Design', { :controller => "projects", :action => "sbnu" }, :remote => true, :class => 'project-link'
-    %p 'SB Nation pushes the boundaries of a news website. It is beautiful and visually compelling without gimmicks.'
-
+    =link_to 'SB Nation, Redesign', { :controller => "projects", :action => "sbnu" }, :remote => true, :class => 'project-link'
+    =link_to('Society of News Design Awards SB Nation, Best Designed Website of 2012',{ :controller => "projects", :action => "sbnu" }, :remote => true, :class => 'project-link')
+    %p.quote 'It's beautiful and visually compelling without gimmicks.'
+    =link_to('read article', 'http://www.snd.org/2013/03/meet-snds-2012-worlds-best-news-sites-and-apps-sb-nation-lenta-ru-and-the-guardian-and-observer-ipad-app/', :target => 'blank')
 #recent-projects.clearfix.clear-b
   %h2 recent projects
   .recent-project
     =image_tag('slide-vakko.png')
-    =link_to 'Vakko', { :controller => "projects", :action => "vakko" }, :remote => true, :class => 'project-link'
+    =link_to 'Vakko Fasion', { :controller => "projects", :action => "vakko" }, :remote => true, :class => 'project-link'
     %p Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
   .recent-project
     =image_tag('slide-nate.png')
     =link_to 'Nate Mcgarigal', { :controller => "projects", :action => "nate" }, :remote => true, :class => 'project-link'
     %p Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-
 = render "shared/footer"
 = render "shared/project_slider"

@@ -1,12 +1,18 @@
 @import "breakpoints";
 
 body.index {
-  .project-link {
-    font-size:12px;
-    text-transform:uppercase;
+  p, a {
+    font-size:14px;
+    display:block;
+    padding-bottom:3px;
   }
-  p {
-//    font-size:12px;
+  #resume {
+    a {
+      display:inline;
+    }
+    span {
+      font-size:14px;
+    }
   }
   .featured-project {
     width:50%;
@@ -22,12 +28,39 @@ body.index {
       padding-right:45px;
       width:100%;
     }
+    .project-link {
+      font-size:16px;
+      text-transform:capitalize;
+      display:block;
+      line-height:1.4;
+      color:#444;
+      &:first-child {
+        color: rgb(59, 216, 237);
+        text-transform:uppercase;
+        font-size:12px;
+      }
+      &:nth-child(2) {
+        margin-bottom:16px;
+      }
+    }
+    p {
+      &.quote {
+        color:#ccc;
+        font-size: 22px;
+        font-style: italic;
+        font-family: 'ACaslonPro-Italic', georgia;
+      }
+    }
   }
   .recent-project {
     clear:both;
     width:100%;
     @media(min-width:$breakpoint-e) {
       width:70%;
+    }
+    a {
+      text-transform:capitalize;
+      font-size:16px
     }
     img {
       width:33%;
