@@ -13,11 +13,11 @@
 #featured-projects.clearfix
   %h2 featured projects
   .featured-project
-    =link_to 'Athena, Ad Unit', { :controller => "projects", :action => "iab" }, :remote => true, :class => 'project-link'
+    =link_to 'Athena Custom Ad Unit', { :controller => "projects", :action => "iab" }, :remote => true, :class => 'project-link'
     =link_to("The Internet Advertising Bureau Features VOX's Athena Unit",{ :controller => "projects", :action => "iab" }, :remote => true, :class => 'project-link')
     %p Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
   .featured-project
-    =link_to 'SB Nation, Redesign', { :controller => "projects", :action => "sbnu" }, :remote => true, :class => 'project-link'
+    =link_to 'SB Nation Redesign', { :controller => "projects", :action => "sbnu" }, :remote => true, :class => 'project-link'
     =link_to('Society of News Design Awards SB Nation, Best Designed Website of 2012',{ :controller => "projects", :action => "sbnu" }, :remote => true, :class => 'project-link')
     %p.quote 'It's beautiful and visually compelling without gimmicks.'
     =link_to('read article', 'http://www.snd.org/2013/03/meet-snds-2012-worlds-best-news-sites-and-apps-sb-nation-lenta-ru-and-the-guardian-and-observer-ipad-app/', :target => 'blank')
@@ -29,7 +29,7 @@
     %p Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
   .recent-project
     =image_tag('slide-nate.png')
-    =link_to 'Nate Mcgarigal', { :controller => "projects", :action => "nate" }, :remote => true, :class => 'project-link'
+    =link_to 'Nathan Mcgarigal Photography', { :controller => "projects", :action => "nate" }, :remote => true, :class => 'project-link'
     %p Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
 = render "shared/footer"
 = render "shared/project_slider"
