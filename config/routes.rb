@@ -7,11 +7,9 @@ Rails.application.routes.draw do
   get 'projects/vakko'
 
   root 'static_pages#index'
-  
   get 'static_pages/index'
-
   get 'static_pages/resume'
-
+  get 'static_pages/resume_pdf'
   get 'static_pages/work'
 
 

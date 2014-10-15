@@ -5,6 +5,14 @@ class StaticPagesController < ApplicationController
   def resume
   end
 
+  def resume_pdf
+    send_file(
+        "#{Rails.root}/public/johnfullerresume.pdf",
+        filename: "JohnFullerResume.pdf",
+        type: "application/pdf"
+      )
+  end
+
   def work
   end
 end
