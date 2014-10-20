@@ -50,8 +50,7 @@ $( document ).ready(function() {
   $('.project-link').click(function() {
     sliderStart();
   });
-
-  $('.close-slider').click(function() {
+  $("body").on("click",".close-slider", function(){
     sliderEnd();
   });
 

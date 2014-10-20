@@ -12,6 +12,14 @@ body {
   color: #595959;
   max-width: 1280px;
   position:relative;
+  ::-moz-selection { 
+  background-color: #333; 
+  color: #ffffff;
+  }
+  ::selection {
+  background-color: #333;
+  color: #fff;
+  }
   header {
      position: relative;
      margin-bottom: 120px;
