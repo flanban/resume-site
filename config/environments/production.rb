@@ -7,7 +7,7 @@ Rails.application.configure do
   
   config.middleware.use '::Rack::Auth::Basic' do |u, p|
     [u, p] == ['un', 'pw']
-
+  end
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
