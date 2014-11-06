@@ -1,0 +1,114 @@
+@import "breakpoints";
+
+* {
+  box-sizing: border-box;
+}
+body.about, body.resume {
+  background: #fbfbfb;
+  width: 100%;
+  margin: auto;
+  padding: 90px;
+  color: #595959;
+  max-width: 1280px;
+  position:relative;
+  ::-moz-selection { 
+  background-color: #333; 
+  color: #ffffff;
+  }
+  ::selection {
+  background-color: #333;
+  color: #fff;
+  }
+  header {
+     position: relative;
+     margin-bottom: 120px;
+     ul {
+       position: absolute;
+       right: 0;
+       top: 37px;
+       text-align: right;
+       font-size: 13px;
+       line-height: 1.7;
+     }
+     @media(max-width:$breakpoint-b) {
+       ul {
+         position:relative;
+         left:0;
+         text-align:left;
+       }
+     }
+   }
+   #what-he-do {
+     position: relative;
+     top: -16px;
+     left: 16px;
+   }
+   #summary p {
+     line-height: 1.4;
+     font-size: 18px;
+   }
+   @media (max-width: 730px) {
+     header h3 {
+       max-width: 270px;
+     }
+   }
+  @media(max-width:$breakpoint-b) {
+    padding:40px;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(59, 216, 237);
+  }
+
+  h1 {
+    font-size: 54px;
+    line-height: 1.4;
+    font-family: 'ACaslonPro-Regular', georgia;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-top: 36px;
+    margin-bottom: 4px;
+    font-family: 'ACaslonPro-Regular', georgia;
+    text-transform: capitalize;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-style: italic;
+    text-transform: lowercase;
+    font-family: 'ACaslonPro-Italic', georgia;
+  }
+
+  h4 {
+    font-size: 11px;
+    text-transform: uppercase;
+    margin: 0px 0 2px 0;
+  }
+
+  h5 {
+    font-size: 22px;
+  }
+
+  h6 {
+    font-size: 14px;
+    margin:0 0 24px 0;
+  }
+
+  p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  .clear-b {
+    clear:both;
+  }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

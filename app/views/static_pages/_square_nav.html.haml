@@ -1,0 +1,39 @@
+//%img#down-finger.hidden{:src => "/images/down-finger.png"}/
+%ul#square-nav
+  %li.my-square.nav-box
+    =link_to('about',static_pages_about_path)
+    %span about
+  %li#work.square-normal.nav-box
+    %a{:href => "#"} work
+    %span work
+    .close-btn.drop.nav-box.hidden
+      %a{:href => "#"} close
+    #ottoneu.drop.nav-box.hidden
+      %a{:href => "ottoneu"} ottoneu
+    #vox.drop.nav-box.hidden
+      %a{:href => "other_work"} other
+    #sbnu.drop.nav-box.hidden
+      %a{:href => "sbnu"} sbnu
+  %li#contact.square-normal.nav-box
+    %a{:href => "#"} contact
+    %span contact
+    .close-btn.drop.nav-box.hidden
+      %a{:href => "#"} close
+    #contact-box.hidden
+      %p send me a message
+      %textarea
+  %li#contact-form.hidden.square-normal.nav-box
+    %p write me here
+    textfield
+    submit button
+  %li#resume.square-normal.nav-box
+    %a{:href => "#"} resume
+    %span resume
+    #resume-text.drop.nav-box.hidden
+      %p If you want my resume please contact me.
+    #resume-text-2.drop.nav-box.hidden
+      %a{:href => "#"} request access
+    .close-btn.drop.nav-box.hidden
+      %a{:href => "#"} close
+
+= render "shared/footer"
