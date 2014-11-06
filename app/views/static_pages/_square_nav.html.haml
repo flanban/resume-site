@@ -1,7 +1,6 @@
-//%img#down-finger.hidden{:src => "/images/down-finger.png"}/
 %ul#square-nav
   %li.my-square.nav-box
-    =link_to('about',static_pages_about_path)
+    =link_to('about', about_path)
     %span about
   %li#work.square-normal.nav-box
     %a{:href => "#"} work
@@ -13,7 +12,7 @@
     #vox.drop.nav-box.hidden
       %a{:href => "other_work"} other
     #sbnu.drop.nav-box.hidden
-      %a{:href => "sbnu"} sbnu
+      =link_to('sbnu', featured_sbnu_path)
   %li#contact.square-normal.nav-box
     %a{:href => "#"} contact
     %span contact
@@ -27,13 +26,5 @@
     textfield
     submit button
   %li#resume.square-normal.nav-box
-    %a{:href => "#"} resume
+    =link_to('resume', resume_path)
     %span resume
-    #resume-text.drop.nav-box.hidden
-      %p If you want my resume please contact me.
-    #resume-text-2.drop.nav-box.hidden
-      %a{:href => "#"} request access
-    .close-btn.drop.nav-box.hidden
-      %a{:href => "#"} close
-
-= render "shared/footer"

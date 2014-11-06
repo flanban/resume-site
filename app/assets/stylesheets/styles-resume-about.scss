@@ -62,9 +62,12 @@ body.about, body.resume {
   }
 
   h1 {
-    font-size: 54px;
-    line-height: 1.4;
-    font-family: 'ACaslonPro-Regular', georgia;
+    a {
+      font-size: 54px;
+      line-height: 1.4;
+      font-family: 'ACaslonPro-Regular', georgia;
+      color: #595959;
+    }
   }
 
   h2 {
@@ -81,6 +84,13 @@ body.about, body.resume {
     font-style: italic;
     text-transform: lowercase;
     font-family: 'ACaslonPro-Italic', georgia;
+    a {
+      font-size: 20px;
+      font-style: italic;
+      text-transform: lowercase;
+      font-family: 'ACaslonPro-Italic', georgia;
+      color: #595959;
+    }
   }
 
   h4 {

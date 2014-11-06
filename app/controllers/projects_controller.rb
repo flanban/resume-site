@@ -10,4 +10,7 @@ class ProjectsController < ApplicationController
   def sbnu
     render :layout => false
   end
+
+  def featured_sbnu
+  end
 end

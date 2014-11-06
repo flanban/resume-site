@@ -2,14 +2,14 @@ Rails.application.routes.draw do
   get 'projects/vakko'
 
   get 'projects/iab'
-  get 'projects/sbnu'
+  get 'featured-sbnu' => 'projects#featured_sbnu', :as => 'featured_sbnu'
   get 'projects/nate'
   get 'projects/vakko'
 
   root 'static_pages#index'
   get 'static_pages/index'
-  get 'static_pages/about'
-  get 'static_pages/resume'
+  get 'about' => 'static_pages#about', :as => 'about'
+  get 'resume' => 'static_pages#resume', :as => 'resume'
   get 'static_pages/resume_pdf'
   get 'static_pages/work'
 
