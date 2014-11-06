@@ -11,27 +11,26 @@
     = yield
   :javascript
     jQuery(document).ready(function($) {
-        $(".resume-slider-first").royalSlider({
-          controlNavigation:'none',
-          imageScaleMode:'fit',
-          imageScalePadding:0,
-          imageAlignCenter:false,
-          slidesSpacing:0,
-          globalCaption:true,
-          loop:true,
-          autoPlay: {
-            enabled: true,
-            pauseOnHover: true,
-            delay:6000,
-          }
-        });
-        $(".resume-slider").royalSlider({
-          controlNavigation:'none',
-          imageScaleMode:'fit',
-          imageScalePadding:0,
-          imageAlignCenter:false,
-          slidesSpacing:0,
-          globalCaption:true,
-          loop:true
-        });
+      $(".resume-slider-first").royalSlider({
+        controlNavigation:'none',
+        imageScaleMode:'fit',
+        imageScalePadding:0,
+        imageAlignCenter:false,
+        slidesSpacing:0,
+        globalCaption:true,
+        loop:true,
+        autoPlay: {
+          enabled: true,
+          pauseOnHover: true,
+          delay:6000,
+        }
+      });
+      $(".resume-slider").royalSlider({
+        controlNavigation:'none',
+        imageScaleMode:'fit',
+        imageScalePadding:0,
+        imageAlignCenter:true,
+        slidesSpacing:0,
+        globalCaption:true,
+      });
     });

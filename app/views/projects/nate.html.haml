@@ -1,6 +1,23 @@
-%h2 Nathan Mcgarigal Photography
-.project-slider
-  =image_tag("placeholder-3.png", :class => "rsImg")
-  =image_tag("placeholder-1.png", :class => "rsImg")
-
+//%h4 Nate Mcgarigal Photography
+.project-slider.rsDefault
+  %div
+    =image_tag("slide-nate-1.jpg", :class => "rsImg")
+    %figure.rsCaption 
+      %span home page
+      The website was developed using Ruby on Rails, HTML(haml), css(SCSS) and javascript. Content was delivered with the Flickr and Vimeo APIs. The visual design was put together using a combination of photoshop and the browser. The typeface used is Lato by Łukasz Dziedzic; webfonts delivered via google fonts.
+  %div
+    =image_tag("slide-nate-2.jpg", :class => "rsImg")
+    %figure.rsCaption 
+      %span photography page
+      The client wanted a portfolio site for his cinematography and photography work. He needed a custom design, the ability to able to manage content and didn't want to use a canned solution. Building a simple CMS was out of his budget, so noticing that he keeps his work on Flickr and Vimeo I decided to populate his site using their APIs. 
+  %div
+    =image_tag("slide-nate-3.jpg", :class => "rsImg")
+    %figure.rsCaption 
+      %span gallery page
+      This allowed him to manage his content with services he already uses and avoided the overhead of a framework.
+  %div
+    =image_tag("slide-nate-4.jpg", :class => "rsImg")
+    %figure.rsCaption 
+      %span cinematography page
+      This allowed him to manage his content with services he already uses and avoided the overhead of a framework.
 =image_tag('close-button.png', :class => 'close-slider')

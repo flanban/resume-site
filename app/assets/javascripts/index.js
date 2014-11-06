@@ -1,12 +1,14 @@
 function initSlider() {
   $('.project-slider').royalSlider({
     controlNavigation:'none',
-    imageScaleMode:'fill',
+    imageScaleMode:'fit',
     imageScalePadding:0,
-    imageAlignCenter:false,
+    imageAlignCenter:true,
     slidesSpacing:0,
     globalCaption:true,
-    loop:true
+    arrowNav:true,
+    loop:false,
+    usePreloader: true
   });
 }
 $( document ).ready(function() {
@@ -24,17 +26,7 @@ $( document ).ready(function() {
     $('#project-slider').empty();
     
   }
-  function initSlider() {
-    $('.project-slider').royalSlider({
-      controlNavigation:'none',
-      imageScaleMode:'fill',
-      imageScalePadding:0,
-      imageAlignCenter:false,
-      slidesSpacing:0,
-      globalCaption:true,
-      loop:true
-    });
-  }
+  initSlider()
   
   function sliderStart() {
     showSlider();

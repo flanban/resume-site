@@ -95,10 +95,18 @@
 .rsGCaption {
 	width: 100%;
 	float: left;
-	text-align: right;
-	padding-top:20px;
-  
+	text-align: left;
+	padding:45px 90px;
+	position:relative;
 }
+.rsGCaption span {
+  right:20px;
+  font-style:italic;
+  font-size:smaller;
+  position:absolute;
+  top:7px;
+}
+
 
 /* Fullscreen options, very important ^^ */
 .royalSlider.rsFullscreen {

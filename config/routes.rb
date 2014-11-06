@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   root 'static_pages#index'
   get 'static_pages/index'
+  get 'static_pages/about'
   get 'static_pages/resume'
   get 'static_pages/resume_pdf'
   get 'static_pages/work'
