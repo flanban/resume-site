@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+
   def vakko
     render :layout => false
   end
@@ -8,6 +9,10 @@ class ProjectsController < ApplicationController
   end
 
   def sbnu
+    render :layout => false
+  end
+  
+  def nate
     render :layout => false
   end
 
