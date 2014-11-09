@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   get 'projects/iab'
   get 'featured-sbnu' => 'projects#featured_sbnu', :as => 'featured_sbnu'
+  get 'projects/sbnu'
   get 'projects/nate'
   get 'projects/vakko'
 

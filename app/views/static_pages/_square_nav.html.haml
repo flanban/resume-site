@@ -1,18 +1,21 @@
 %ul#square-nav
+
   %li.my-square.nav-box
     =link_to('about', about_path)
     %span about
+
   %li#work.square-normal.nav-box
     %a{:href => "#"} work
     %span work
     .close-btn.drop.nav-box.hidden
       %a{:href => "#"} close
-    #ottoneu.drop.nav-box.hidden
-      %a{:href => "ottoneu"} ottoneu
-    #vox.drop.nav-box.hidden
-      %a{:href => "other_work"} other
     #sbnu.drop.nav-box.hidden
       =link_to('sbnu', featured_sbnu_path)
+    #ottoneu.drop.nav-box.hidden
+      =link_to 'Nathan Mcgarigal Photography', { :controller => "projects", :action => "nate" }, :remote => true, :class => 'project-link'
+    #vox.drop.nav-box.hidden
+      =link_to 'Vakko Fasion', { :controller => "projects", :action => "vakko" }, :remote => true, :class => 'project-link'
+
   %li#contact.square-normal.nav-box
     %a{:href => "#"} contact
     %span contact
@@ -25,6 +28,9 @@
     %p write me here
     textfield
     submit button
+
   %li#resume.square-normal.nav-box
     =link_to('resume', resume_path)
     %span resume
+
+= render "shared/project_slider"
