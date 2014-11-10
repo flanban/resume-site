@@ -8,7 +8,7 @@ function initSlider() {
     globalCaption:true,
     arrowNav:true,
     loop:false,
-    usePreloader: true
+    usePreloader: false
   });
 }
 $( document ).ready(function() {

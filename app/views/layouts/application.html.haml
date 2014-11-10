@@ -1,5 +1,5 @@
 !!!
-%html
+%html{:class => "#{"#{controller.action_name} #{@body_class}".strip} clearfix"}
   %head
     %title John Fuller
     %meta{:content => "initial-scale=1, maximum-scale=1", :name => "viewport"}

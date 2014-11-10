@@ -28,6 +28,8 @@ module ResumeSite
     # config.i18n.default_locale = :de
 
     config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+    
+    config.assets.precompile += ['sbnu/*.js']
 
   end
 end
