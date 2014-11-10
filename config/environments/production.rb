@@ -5,6 +5,7 @@ Rails.application.configure do
   config.cache_classes = true
   
   
+  
   config.middleware.use '::Rack::Auth::Basic' do |u, p|
     [u, p] == ['un', 'pw']
   end

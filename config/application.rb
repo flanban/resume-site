@@ -29,7 +29,7 @@ module ResumeSite
 
     config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
     
-    config.assets.precompile += ['sbnu/*.js']
+    #config.assets.precompile += ['sbnu/*.js']
 
   end
 end
