@@ -9,24 +9,29 @@
     %span work
     .close-btn.drop.nav-box.hidden
       %a{:href => "#"} close
-    #featured-project.drop.nav-box.hidden
+    #featured-project.drop.nav-box
       %h5 featured
       =link_to('sbnu', featured_sbnu_path)
-    #recent-project.drop.nav-box.hidden
+    #recent-project.drop.nav-box
       %h5 recent
       =link_to 'vakko fashion', { :controller => "projects", :action => "vakko" }, :remote => true, :class => 'project-link'
-    #other-projects.drop.nav-box.hidden
+    #other-projects.drop.nav-box
       =link_to 'other projects', { :controller => "projects", :action => "nate" }, :remote => true, :class => 'project-link'
+    .blank-nav-box.drop.nav-box
 
   %li#contact.square-normal.nav-box
     %a{:href => "#"} contact
     %span contact
-    .close-btn.drop.nav-box.hidden
+    .close-btn.close-contact.drop.nav-box.hidden
       %a{:href => "#"} close
-    #contact-box.hidden
-      %p send me a message
-      %textarea
-  %li#contact-form.hidden.square-normal.nav-box
+    #contact-box.hidden.left-box.drop
+    #contact-box.hidden.drop
+      %p The best way to reach me is with an email.
+      =link_to('johnsfuller@gmail.com', 'mailto:johnsfuller@gmail.com')
+      %br
+      %p my phone number is
+      =link_to('202-681-8640', 'callto:2026818640')
+  %li#contact-form.hidden.square-normal.nav-box.drop
     %p write me here
     textfield
     submit button
