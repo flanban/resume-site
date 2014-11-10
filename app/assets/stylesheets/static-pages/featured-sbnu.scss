@@ -76,7 +76,9 @@ body, .onepage-wrapper, html {
   }
   #usain-bg {
     position:absolute;
-    background:url(images/sbnupage-usain-bg.jpg) no-repeat center;
+    background-image:asset_url('featured-sbnu/sbnupage-usain-bg.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
     background-size:contain;
     height:100%;
     width:100%;
@@ -85,7 +87,9 @@ body, .onepage-wrapper, html {
   }
   #usain-cutout {
     position:absolute;
-    background:url(images/sbnupage-usain-cutout.png) no-repeat center;
+    background-image:asset_url('featured-sbnu/sbnupage-usain-cutout.png');
+    background-repeat:no-repeat;
+    background-position:center;
     background-size:contain;
     height:100%;
     width:100%;
@@ -93,7 +97,9 @@ body, .onepage-wrapper, html {
   }
   #usain-text {
     position:absolute;
-    background:url(images/sbnupage-usain-text.png) no-repeat center;
+    background-image:asset_url('featured-sbnu/sbnupage-usain-text.png');
+    background-repeat:no-repeat;
+    background-position:center;
     background-size:contain;
     height:100%;
     width:100%;
@@ -352,7 +358,7 @@ body, .onepage-wrapper, html {
     #logo-wrap {
       position:absolute;
       height:100%;
-      background:url(../images/logos-bg.jpg);
+      background-image:asset_url('featured-sbnu/logos-bg.jpg');
       top:0;
       width:110%;
     }
@@ -548,7 +554,7 @@ body, .onepage-wrapper, html {
       font-size:48px;
     }
     #b-and-a-wrap {
-      background-image:url(../images/b-and-a-bg.png);
+      background-image:asset_url('featured-sbnu/b-and-a-bg.png');
       background-repeat:no-repeat;
       background-size:contain;
     }
