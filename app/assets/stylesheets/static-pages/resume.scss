@@ -65,6 +65,7 @@ body.resume {
     float: left;
     clear: both;
     width: 35%;
+    padding-right:50px;
     h5 {
       max-width: 200px;
       margin-bottom: 6px;
@@ -73,6 +74,26 @@ body.resume {
       width:100%;
       h5 {
         max-width:100%;
+      }
+    }
+    h6 {
+      position:relative;
+      .has-note {
+        color:#3bd8ed;
+      }
+      &:hover {
+        .note {
+          display:block;
+        }
+      }
+      .note {
+        display:none;
+        position:absolute;
+        font-style:italic;
+        color:#999;
+        width:100%;
+        border-top:1px dashed #ddd;
+        margin-top:7px;
       }
     }
   }
