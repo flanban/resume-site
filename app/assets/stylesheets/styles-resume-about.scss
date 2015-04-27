@@ -3,11 +3,11 @@
 * {
   box-sizing: border-box;
 }
-body.about, body.resume {
+body.about, body.resume, .resume {
   background: #fbfbfb;
   width: 100%;
   margin: auto;
-  padding: 90px;
+  padding: 90px 170px;
   color: #595959;
   max-width: 1280px;
   position:relative;

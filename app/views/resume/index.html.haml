@@ -1,0 +1,97 @@
+.resume
+  = render "shared/header"
+
+  #summary
+    %h2 Summary
+    %p Professionally, I’ve enjoyed six years working with at-scale digital publishing brands. Currently, I work on contracts and freelance projects. At my various professional roles I've worked as either a designer, a frontend or a mix of the two. Having a fine arts background, combined with a degree in print design, plus years pursuing optimal frontend methods while happily stumbling through rails apps; I've wound up with an interestingly rounded skill set, bridging design and development.
+    %p With a dedicated eye towards learning and improvement, I use my professional visual and UI/UX design experiences to help guide my implementation of front-end code in a manner that compliments the design’s intentions, while remaining cohesive with the backend technologies used.
+
+  %h2 Employment
+  .job-container.clearfix
+    %ul.job-info
+      %li.job-company
+        FREELANCE
+        %span.job-location Baltimore, MD
+      %li.job-title Visual Design & Front End Dev
+      %li.job-date 2013-present
+    .job-description
+      %p The bulk of my freelance work has been responsive frontend development. In addition, I'm typically responsible for visual QA, quickly acclimating with teams or working solo and managing the development process by myself.
+
+  .job-container.clearfix
+    %ul.job-info
+      %li.job-company
+        Vox Media
+        %span.job-location Washington, DC
+      %li.job-title Lead Designer
+      %li.job-date 2010-2013
+    .job-description
+      %p At Vox I had the pleasure of working on an incredibly talented product team. Being with Vox through a period of rapid growth provided a rich educational experience, that I appreciate greatly. I worked primarily as a visual and UI designer, within a rails environment. I was responsible for communication with developers, designers, frontend devs, product owners, advertising etc.
+    %figure.job-images.resume-slider
+      %div
+        =image_tag('logo-vox.png', :class => 'rsImg')
+        %figure.rsCaption
+  .job-container.clearfix
+    %ul.job-info
+      %li.job-company
+        AOL
+        %span.job-location Dulles, VA
+      %li.job-title Designer
+      %li.job-date 2009-2010
+    .job-description
+      %p At Aol, I primarily designed for fanhouse.com, which is no longer with us. However, at the time it was a top-ten online sports news site, with significant readership and a strong product team. I also helped design mmafighting.com, which ironically Vox Media wound up acquiring from Aol, while I was at Vox.
+    %figure.job-images.resume-slider
+      %div
+        =image_tag('logo-aol-1.png', :class => 'rsImg')
+        %figure.rsCaption
+  .job-container.clearfix.last
+    %ul.job-info
+      %li.job-company
+        AOL
+        %span.job-location Dulles, VA
+      %li.job-title Design Intern
+      %li.job-date 2007-2009
+    .job-description
+      %p This was my first professional web experience. I was responsible for working with a team, taking creative direction , working towards product launches against tricky deadlines.
+    %figure.job-images.resume-slider
+      %div
+        =image_tag('logo-aol-2.png', :class => 'rsImg')
+        %figure.rsCaption
+  #education
+    %h2 Education
+    %h5 Corcoran College of Art & Design
+    %h4 Washington, DC
+    %h6 BFA, Print Design & Digital Media
+  
+    %h5 Tallin University
+    %h4 Tallin, Estonia
+    %h6
+      Study Abroad. 
+      %span.has-note IMKE 
+      Masters Program(not all of it).
+      %p.note Information Management and Knowledge Exchange
+  #skills
+    %h2 Web Skills
+    %ul
+      %li
+        %h4 front-end
+      %li html5/SCSS
+      %li responsive / mobile
+      %li Javascript
+      %li comfortable w/ js frameworks(angular, ember)
+    %ul
+      %li
+        %h4 environment
+      %li Ruby on Rails
+      %li MVC in general
+      %li git
+      %li node.js
+      %li remote work
+    %ul
+      %li
+        %h4 visual design
+      %li UI layout
+      %li UX interaction design
+      %li photoshop, indesign, illustrator
+  = render "shared/footer"
+  //= render "static_pages/resume/footnote"
+=image_tag('close-button-dark.png', :class => 'close-slider')

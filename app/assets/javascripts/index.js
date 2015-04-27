@@ -39,10 +39,11 @@ $( document ).ready(function() {
 
 
 
-  $('.project-link').click(function() {
+  $('.slider-link').click(function() {
     sliderStart();
   });
   $("body").on("click",".close-slider", function(){
+    // autohide dropdown items $('.drop').hide();
     sliderEnd();
   });
 

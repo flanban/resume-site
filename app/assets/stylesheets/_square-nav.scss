@@ -177,16 +177,24 @@ body {
           font-weight:400;
           font-size:16px;
         }
-        &#recent-project {
+        &.bottom-left {
           top:100%;
           left:-100%;
         }
-        &#other-projects {
+        &.bottom-right {
           top:100%;
           left:0%;
         }
-        &#featured-project {
+        &.top-left {
           top:0;
+          left:-100%;
+        }
+        &.top-top-right {
+          top:-100%;
+          left:0;
+        }
+        &.top-top-left {
+          top:-100%;
           left:-100%;
         }
         &.blank-nav-box {

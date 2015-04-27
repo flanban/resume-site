@@ -1,4 +1,5 @@
 #project-slider {
+  overflow:auto; //sketchy
   position:absolute;
   top:0;
   left:0;
@@ -14,36 +15,33 @@
   -moz-transition: margin 500ms;
   -o-transition: margin 500ms;
   transition: margin 500ms;
+  
+  
   .project-slider {
     height:480px;
     width:auto;
     margin-top:40px;
+    &.gallery {
+      &, h2, a {
+        color:#efefef;
+      }
+      a:hover {
+        color:#8EB39C;
+      }
+    }
   }
+
   .rsCaption {
     line-height:1.4;
   }
-  &, h2, a {
-    color:#efefef;
-  }
-  a:hover {
-    color:#8EB39C;
-  }
+
   h4 {
     margin-bottom:6px;
     opacity:.5;
   }
-  .resume-slider {
-    position:relative;
-    height:100px;
-    .rsImg {
-      width:70%;
-    }
-    .rsGCaption {
-      position:absolute;
-    }
-  }
+
   .close-slider {
-    position:absolute;
+    position:fixed;
     top:18px;
     right:18px;
     opacity:.4;
