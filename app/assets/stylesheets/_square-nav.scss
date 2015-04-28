@@ -1,4 +1,5 @@
 body {
+  line-height:1.4;
   &.otto-bg {
     background:asset_url('otto-bg.png');
   }
@@ -10,15 +11,7 @@ body {
     background: #cc5333 url(sbnu-bg.png) no-repeat 20px 200px;
     background-size:24%;
   }
-  #down-finger {
-    position:absolute;
-    right:144px;
-    top:0;
-    &.bottom-10 {
-      top:auto;
-      bottom:12%;
-    }
-  }
+
   #square-nav {
     color:#fff;
     @extend .clearfix;
@@ -32,7 +25,7 @@ body {
     max-width: 103%;
     max-height:100%;
     a {
-      color:#8EB39C;
+      color:magenta;
       text-decoration:none;
     }
     .nav-box {
@@ -43,6 +36,16 @@ body {
       float:left;
       margin:0  0;
       background-repeat:no-repeat;
+      > span {
+        cursor:pointer;
+        opacity:0;
+        position:absolute;
+        color:#fff;
+        font-weight:900;
+      }
+      > p {
+        line-height:1.4;
+      }
       &.my-square {
         background-image:asset_url('big-jf.png');
         > a {
@@ -53,13 +56,12 @@ body {
             opacity:1;
           }
         }
+        .nav-box {
+          padding:0 5px;
+        }
         span {
-          opacity:0;
-          position:absolute;
           top:5px;
           left:3px;
-          color:#fff;
-          font-weight:900;
         }
       }
       &#work {
@@ -73,12 +75,9 @@ body {
           }
         }
         span {
-          opacity:0;
-          position:absolute;
           top:141px;
           left:118px;
           color:#000;
-          font-weight:900;
         }
       }
       &#contact {
@@ -92,12 +91,8 @@ body {
           }
         }
         span {
-          opacity:0;
-          position:absolute;
           top:121px;
           left:118px;
-          color:#fff;
-          font-weight:900;
         }
         #contact-box {
           position:absolute;
@@ -124,12 +119,52 @@ body {
           }
         }
         span {
-          opacity:0;
-          position:absolute;
           top:41px;
           left:42px;
-          color:#fff;
-          font-weight:900;
+        }
+        .circle-button {
+          position:relative;
+          top:90px;
+          left:50px;
+          .half-circle {
+              position:absolute;
+              text-align:center;
+              width: 80px;
+              height: 40px;
+              color:#fff;
+              padding:17px -0 0 0;
+              border-top-left-radius: 80px;
+              border-top-right-radius: 80px;
+              border: 2px solid #fff;
+              border-bottom: 0;
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              box-sizing: border-box;
+              &:hover {
+                border: 2px solid cyan;
+                background:cyan;
+                color:magenta;
+              }
+              &.half-circle-bottom {
+                border-top-left-radius: 0px;
+                border-top-right-radius: 0px;
+                border-bottom-left-radius: 80px;
+                border-bottom-right-radius: 80px;
+                border-top: 0;
+                border-bottom: 2px;
+                background:#fff;
+                color:black;
+                padding:8px -0 0 0;
+                top:40px;
+                &:hover {
+                  border: 2px solid yellow;
+                  background:yellow;
+                  color:black;
+                  padding:6px -0 0 0;
+                  
+                }
+              }
+          }
         }
       }
       &.inactive-1 {
@@ -169,7 +204,7 @@ body {
         display:none;
         &:hover {
           a {
-            color:#8EB39C;
+            //color:#8EB39C;
           }
         }
         a {
@@ -184,6 +219,14 @@ body {
         &.bottom-right {
           top:100%;
           left:0%;
+        }
+        &.bottom-right-right {
+          top:100%;
+          left:100%;
+        }
+        &.top-right-right {
+          top:0%;
+          left:100%;
         }
         &.top-left {
           top:0;
@@ -215,14 +258,35 @@ body {
           left:0%;
           opacity:1;
           background:#000;
-          a {
-            color:#8EB39C;
+          > a {
+            text-indent:-9000em;
+          }
+          p {
+            position:absolute;
+            top:32px;
+            left:32px;
+            cursor:pointer;
+            img {
+              position:relative;
+              top:5px;
+            }
           }
           &.close-contact {
-            a {
-              padding-top: 88%;
-              text-align: right;
-              padding-right: 7px;
+            p {
+              top: 110px;
+              left: 109px;
+            }
+          }
+          &.close-about {
+            p {
+              top: -8px;
+              left: -19px;
+            }
+          }
+          &.close-work {
+            p {
+              top: 60px;
+              left: 36px;
             }
           }
         }

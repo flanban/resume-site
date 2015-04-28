@@ -1,14 +1,32 @@
 %ul#square-nav
   
-  %li.my-square.nav-box
-    =link_to('about', about_path)
+  %li.my-square.nav-box.square-normal
+    =link_to('about', "", :remote => true)
     %span about
-
-  %li#work.square-normal.nav-box
-    %a{:href => "#"} work
-    %span work
-    .close-btn.drop.nav-box.hidden
+    .close-btn.close-about.drop.nav-box.hidden    
       %a{:href => "#"} back
+      %p
+        =image_tag("back-arrow.png")
+        back
+    .bottom-right.drop.nav-box
+      %p I'm passionate about building great product with a tight knit team. Most of my experience is with high traffic editorial sites, which provided a great education in designing for sites with large userbases and complex interfaces.
+      %b
+    .bottom-right-right.drop.nav-box
+      %p I've led the visual design on a few large scale responsive projects, with strong results.
+      %br
+      %p In addition to the design I do for work, personal projects help me experiment and keep up with the latest in design technology.
+
+    .top-right-right.drop.nav-box
+      =image_tag("about-pic.png")
+      
+  %li#work.square-normal.nav-box
+    =link_to('work', "", :remote => true)
+    %span work
+    .close-btn.close-work.drop.nav-box.hidden
+      %a{:href => "#"} back
+      %p
+        =image_tag("back-arrow.png")
+        back
     .top-left.drop.nav-box
       %h5 featured
       =link_to('sbnu', featured_sbnu_path)
@@ -16,20 +34,24 @@
       %h5 recent
       =link_to 'vakko fashion', { :controller => "projects", :action => "vakko" }, :remote => true, :class => 'slider-link'
     .bottom-right.drop.nav-box
-      =link_to 'other projects', { :controller => "projects", :action => "nate" }, :remote => true, :class => 'slider-link'
+      =link_to 'other clients', { :controller => "projects", :action => "nate" }, :remote => true, :class => 'slider-link'
     .blank-nav-box.drop.nav-box
 
   %li#contact.square-normal.nav-box
-    %a{:href => "#"} contact
+    =link_to('contact', "", :remote => true)
     %span contact
     .close-btn.close-contact.drop.nav-box.hidden
       %a{:href => "#"} back
+      %p
+        =image_tag("back-arrow.png")
+        back
     #contact-box.hidden.left-box.drop
     #contact-box.hidden.drop
-      %p The best way to reach me is with an email.
+      %p Email is the best way to reach me.
       =link_to('johnsfuller@gmail.com', 'mailto:johnsfuller@gmail.com')
       %br
-      %p my phone number is
+      %br
+      %p Or a phone call.
       =link_to('202-681-8640', 'callto:2026818640')
   %li#contact-form.hidden.square-normal.nav-box.drop
     %p write me here
@@ -41,7 +63,15 @@
     %span resume      
     .close-btn.drop.nav-box.hidden
       %a{:href => "#"} back
+      %p
+        =image_tag("back-arrow.png")
+        back
     .top-top-left.drop.nav-box
-      %h5 view as
-      =link_to 'html', { :controller => "resume", :action => "index" },data: {remote: true, type: "script"}, :class => 'slider-link'
+      .circle-button
+        =link_to 'html', { :controller => "resume", :action => "index" },data: {remote: true, type: "script"}, :class => 'slider-link half-circle'
+        =link_to 'pdf', 'poo', :class => 'half-circle-bottom half-circle'
+    .top-left.drop.nav-box
+    .top-top-right.drop.nav-box
+
 = render "shared/project_slider"
+    
