@@ -13,6 +13,7 @@ body {
   }
 
   #square-nav {
+    input:focus {outline: none; }
     color:#fff;
     @extend .clearfix;
     width: 358px;
