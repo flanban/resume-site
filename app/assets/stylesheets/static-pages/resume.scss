@@ -53,6 +53,9 @@
     position: relative;
     width: 30%;
     height: 140px;
+    @media(max-width:$breakpoint-b) {
+      display:none;
+    }
     .rsCaption a {
       color: #777;
       font-style: italic;

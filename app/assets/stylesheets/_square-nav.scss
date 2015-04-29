@@ -3,9 +3,14 @@
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   -webkit-tap-highlight-color: transparent; /* For some Androids */
 }
-
+.italic-yo {
+  position:absolute;
+  color:transparent;
+  font-style:italic;
+}
 body {
   line-height:1.4;
+  font-weight:300;
   &.otto-bg {
     background:asset_url('otto-bg.png');
   }
@@ -54,6 +59,7 @@ body {
         opacity:0;
         position:absolute;
         color:#fff;
+        //letter-spacing:1px;
         font-weight:900;
       }
       > p {
@@ -64,6 +70,20 @@ body {
           background-image:asset_url('big-jf.png');
           text-indent:-3000em;
         }
+        h2 {
+          position: absolute;
+          bottom: 4px;
+          text-transform:uppercase;
+          letter-spacing:2px;
+          color:#209397;
+        }
+        .close-btn {
+          &:hover {
+            p {
+                 color:#209397;
+            }
+          }
+         }
         &:hover {
           span {
             opacity:1;
@@ -82,6 +102,13 @@ body {
           text-indent:-3000em;
           background-image:asset_url('big-w.png');
         }
+        .close-btn {
+          &:hover {
+            p {
+                 color:cyan;
+            }
+          }
+         }
         &:hover {
           span {
             opacity:1;
@@ -98,10 +125,18 @@ body {
           background-image:asset_url('big-c.png');
           text-indent:-3000em;
         }
+        .close-btn {
+          &:hover {
+            p {
+                 color:yellow;
+            }
+          }
+         }
         h2 {
           text-align:right;
           color:yellow;
           text-transform:uppercase;
+          letter-spacing:2px;
         }
         a {
           color:#6e6e6e;
@@ -118,8 +153,8 @@ body {
           }
         }
         span {
-          top:121px;
-          left:118px;
+          top:116px;
+          left:112px;
         }
         #contact-box {
           position:absolute;
@@ -141,6 +176,14 @@ body {
           
           text-indent:-3000em;
         }
+        .close-btn {
+          &:hover {
+            p {
+                 color:magenta;
+            }
+          }
+         }
+
         h2 {
           top: 38px;
           position: relative;
@@ -156,7 +199,7 @@ body {
         }
         span {
           top:41px;
-          left:42px;
+          left:46px;
         }
         .circle-button {
           position:relative;
@@ -227,7 +270,7 @@ body {
         display:inline-block;
         top:56px;
         width:100%;
-        font-size:11px;
+        font-size:10px;
         letter-spacing:2px;
         position:absolute;
       }
@@ -242,22 +285,29 @@ body {
         -webkit-transition: .3s;
       	-moz-transition: .3s;
       	transition: .3s;
+      	&:hover {
+      	  &.orange {
+            color:#c79949;
+          }
+          &.purple {
+            color:#8a49c7;
+          }
+          &.green {
+            color:#20977a;
+          }
+        }
       }
        .drop {
         position:absolute;
         z-index:22;
-        height:100%;
-        width:100%;
+        height:101%;
+        width:101%;
         background:#000;
         display:none;
-        &:hover {
-          a {
-            //color:#8EB39C;
-          }
-        }
+
         a {
           text-decoration:none;
-          font-weight:400;
+          // font-weight:300;
           font-size:16px;
         }
         &.bottom-left {

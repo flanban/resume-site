@@ -9,6 +9,7 @@
       %p
         =image_tag("back-arrow.png")
         back
+      %h2 About
     .bottom-right.drop.nav-box
       %p I'm passionate about building great product with a tight knit team. Most of my experience is with high traffic editorial sites, which provided a great education in working with large userbases and complex interfaces.
       %b
@@ -32,12 +33,12 @@
         back
     .top-left.drop.nav-box
       %h5 featured
-      =link_to('sbnu', featured_sbnu_path)
+      =link_to('sbnu', featured_sbnu_path, :class=> "orange")
     .bottom-left.drop.nav-box
       %h5 recent
-      =link_to 'vakko fashion', { :controller => "projects", :action => "vakko" }, :remote => true, :class => 'slider-link'
+      =link_to 'vakko fashion', { :controller => "projects", :action => "vakko" }, :remote => true, :class => 'slider-link purple'
     .bottom-right.drop.nav-box
-      =link_to 'other clients', { :controller => "projects", :action => "nate" }, :remote => true, :class => 'slider-link'
+      =link_to 'other clients', { :controller => "projects", :action => "nate" }, :remote => true, :class => 'slider-link green'
     .blank-nav-box.drop.nav-box
 
   %li#contact.square-normal.nav-box
