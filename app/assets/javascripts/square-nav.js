@@ -12,7 +12,7 @@ $( document ).ready(function() {
     e.preventDefault;
     $(this).children('div').fadeIn();
     
-    hideLetters()
+    //hideLetters()
   });
   
   $(".close-btn").click(function (e){
@@ -21,6 +21,6 @@ $( document ).ready(function() {
     e.stopPropagation();
     $('.drop').fadeOut();
     
-    showLetters()
+    //showLetters()
   });
 });

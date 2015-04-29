@@ -53,6 +53,7 @@ body {
       }
       &.my-square {
         > a {
+          background-image:asset_url('big-jf.png');
           text-indent:-3000em;
         }
         &:hover {
@@ -71,6 +72,7 @@ body {
       &#work {
         > a {
           text-indent:-3000em;
+          background-image:asset_url('big-w.png');
         }
         &:hover {
           span {
@@ -85,7 +87,16 @@ body {
       }
       &#contact {
         > a {
+          background-image:asset_url('big-c.png');
           text-indent:-3000em;
+        }
+        h2 {
+          text-align:right;
+          color:yellow;
+          text-transform:uppercase;
+        }
+        a {
+          color:#6e6e6e;
         }
         &:hover {
           span {
@@ -112,6 +123,8 @@ body {
       }
       &#resume {
         > a {
+          background-image:asset_url('big-r.png');
+          
           text-indent:-3000em;
         }
         &:hover {
@@ -181,7 +194,8 @@ body {
         display:inline-block;
         top:56px;
         width:100%;
-        font-size:10px;
+        font-size:11px;
+        letter-spacing:2px;
         position:absolute;
       }
       > a {
@@ -273,6 +287,9 @@ body {
             }
           }
           &.close-contact {
+            h2 {
+              color:magenta;
+            }
             p {
               top: 110px;
               left: 109px;
@@ -285,9 +302,14 @@ body {
             }
           }
           &.close-work {
+            h5 {
+              color:cyan;
+            }
             p {
               top: 60px;
-              left: 36px;
+              width: 100%;
+              text-align:center;
+              left:-7px;
             }
           }
         }

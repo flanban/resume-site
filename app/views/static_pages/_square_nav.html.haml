@@ -1,11 +1,11 @@
 %ul#square-nav
   
   %li.my-square.nav-box.square-normal
-    =image_tag('big-jf.png', :class=> "big-letter")
+    -# =image_tag('big-jf.png', :class=> "big-letter")
     =link_to('about', "", :remote => true)
     %span about
     .close-btn.close-about.drop.nav-box.hidden    
-      %a{:href => "#"} back
+      %a{:href => ""} back
       %p
         =image_tag("back-arrow.png")
         back
@@ -21,11 +21,12 @@
       =image_tag("about-pic.png")
       
   %li#work.square-normal.nav-box
-    =image_tag('big-w.png', :class=> "big-letter")
+    -# =image_tag('big-w.png', :class=> "big-letter")
     =link_to('work', "", :remote => true)
     %span work
     .close-btn.close-work.drop.nav-box.hidden
-      %a{:href => "#"} back
+      %h5 Work
+      %a{:href => ""} back
       %p
         =image_tag("back-arrow.png")
         back
@@ -40,15 +41,16 @@
     .blank-nav-box.drop.nav-box
 
   %li#contact.square-normal.nav-box
-    =image_tag('big-c.png', :class=> "big-letter")
+    -# =image_tag('big-c.png', :class=> "big-letter")
     =link_to('contact', "", :remote => true)
     %span contact
     .close-btn.close-contact.drop.nav-box.hidden
-      %a{:href => "#"} back
+      %a{:href => ""} back
       %p
         =image_tag("back-arrow.png")
         back
     #contact-box.hidden.left-box.drop
+      %h2 Contact
     #contact-box.hidden.drop
       %p Email is the best way to reach me.
       =link_to('johnsfuller@gmail.com', 'mailto:johnsfuller@gmail.com')
@@ -62,11 +64,11 @@
     submit button
 
   %li#resume.square-normal.nav-box
-    =image_tag('big-r.png', :class=> "big-letter")
+    -# =image_tag('big-r.png', :class=> "big-letter")
     =link_to('resume', "", :remote => true)
     %span resume      
     .close-btn.drop.nav-box.hidden
-      %a{:href => "#"} back
+      %a{:href => ""} back
       %p
         =image_tag("back-arrow.png")
         back
