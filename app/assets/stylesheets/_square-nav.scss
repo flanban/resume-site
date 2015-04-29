@@ -24,9 +24,14 @@ body {
     margin-top: -170px;
     max-width: 103%;
     max-height:100%;
+    cursor:pointer;
     a {
       color:magenta;
       text-decoration:none;
+    }
+    .big-letter {
+      height: 100%;
+      width: 100%;
     }
     .nav-box {
       position:relative;
@@ -47,7 +52,6 @@ body {
         line-height:1.4;
       }
       &.my-square {
-        background-image:asset_url('big-jf.png');
         > a {
           text-indent:-3000em;
         }
@@ -65,7 +69,6 @@ body {
         }
       }
       &#work {
-        background-image:asset_url('big-w.png');
         > a {
           text-indent:-3000em;
         }
@@ -81,7 +84,6 @@ body {
         }
       }
       &#contact {
-        background-image:asset_url('big-c.png');
         > a {
           text-indent:-3000em;
         }
@@ -109,7 +111,6 @@ body {
         }
       }
       &#resume {
-        background-image:asset_url('big-r.png');
         > a {
           text-indent:-3000em;
         }
@@ -198,8 +199,8 @@ body {
        .drop {
         position:absolute;
         z-index:22;
-        height:101%;
-        width:101%;
+        height:100%;
+        width:100%;
         background:#000;
         display:none;
         &:hover {
