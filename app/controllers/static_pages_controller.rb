@@ -16,6 +16,10 @@ class StaticPagesController < ApplicationController
         type: "application/pdf"
       )
   end
+  
+  def download
+
+  end
 
   def work
   end

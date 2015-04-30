@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   
   get 'projects/vakko'
 
+  get 'static_pages/download'
   get 'projects/iab'
   get 'featured-sbnu' => 'projects#featured_sbnu', :as => 'featured_sbnu'
   get 'projects/sbnu'
@@ -12,6 +13,7 @@ Rails.application.routes.draw do
 
   root 'static_pages#index'
   get 'static_pages/index'
+  get 'static_pages/download'
   get 'about' => 'static_pages#about', :as => 'about'
   get 'resume' => 'static_pages#resume', :as => 'resume'
   get 'static_pages/resume_pdf'

@@ -39,4 +39,21 @@
     margin-bottom:6px;
     opacity:.5;
   }
+
+  .close-slider {
+    position:fixed;
+    top:18px;
+    right:18px;
+    opacity:.4;
+    z-index:50;
+    display:block;
+    cursor:pointer;
+    &:hover {
+      opacity:1;
+    }
+    -webkit-transition: opacity 500ms;
+   -moz-transition: opacity 500ms;
+   -o-transition: opacity 500ms;
+   transition: opacity 500ms;
+  }
 }
