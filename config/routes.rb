@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get 'resume/index'
-
+  get 'resume/show'
+  
   get 'projects/vakko'
 
   get 'projects/iab'
