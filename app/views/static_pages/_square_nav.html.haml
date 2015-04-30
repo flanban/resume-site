@@ -84,7 +84,7 @@
     .top-top-right.drop.nav-box
       .circle-button
         =link_to 'html', { :controller => "resume", :action => "index" },data: {remote: true, type: "script"}, :class => 'slider-link half-circle'
-        =link_to 'PDF', static_pages_resume_pdf_url, :class => 'half-circle-bottom half-circle'
+        =link_to 'PDF', static_pages_resume_pdf_path, :class => 'half-circle-bottom half-circle'
         
       .text
         %h2 Resume
