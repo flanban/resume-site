@@ -8,6 +8,7 @@
       %a{:href => ""} back
       %p
         =image_tag("back-arrow.png")
+        =image_tag("back-arrow-teal.png", :class=>"back-highlight")
         back
       %h2 About
     .bottom-right.drop.nav-box
@@ -30,10 +31,11 @@
       %a{:href => ""} back
       %p
         =image_tag("back-arrow.png")
+        =image_tag("back-arrow-cyan.png", :class=>"back-highlight")
         back
     .top-left.drop.nav-box
       %h5 featured
-      =link_to('sbnu', featured_sbnu_path, :class=> "orange")
+      =link_to('sbnu', featured_sbnu_path, :class=> "blueish")
     .bottom-left.drop.nav-box
       %h5 recent
       =link_to 'vakko fashion', { :controller => "projects", :action => "vakko" }, :remote => true, :class => 'slider-link purple'
@@ -49,6 +51,8 @@
       %a{:href => ""} back
       %p
         =image_tag("back-arrow.png")
+        =image_tag("back-arrow-yellow.png", :class=>"back-highlight")
+        
         back
     #contact-box.hidden.left-box.drop
       %h2 Contact
@@ -67,20 +71,24 @@
   %li#resume.square-normal.nav-box
     -# =image_tag('big-r.png', :class=> "big-letter")
     =link_to('resume', "", :remote => true)
-    %span resume      
+    %span resume
     .close-btn.drop.nav-box.hidden
       %a{:href => ""} back
       %p
         =image_tag("back-arrow.png")
+        =image_tag("back-arrow-magenta.png", :class=>"back-highlight")
         back
     .top-top-left.drop.nav-box
+    .top-left.drop.nav-box
+    .top-top-right.drop.nav-box
       .circle-button
         =link_to 'html', { :controller => "resume", :action => "index" },data: {remote: true, type: "script"}, :class => 'slider-link half-circle'
         =link_to 'pdf', 'poo', :class => 'half-circle-bottom half-circle'
-    .top-left.drop.nav-box
-    .top-top-right.drop.nav-box
-      %h2 Resume
-      
+      .text
+        %h2 Resume
+        %p References provided upon request at:
+        =link_to('johnsfuller@gmail.com', 'mailto:johnsfuller@gmail.com')
+        
 
 = render "shared/project_slider"
     

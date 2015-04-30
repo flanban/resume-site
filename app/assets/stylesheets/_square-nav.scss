@@ -176,19 +176,41 @@ body {
           
           text-indent:-3000em;
         }
+        .text {
+          position:absolute;
+          //text-align:right;
+          background:#222;
+          width:200%;
+          padding:7px 14px;
+          left: -170px;
+          top: 50px;
+          cursor:auto;
+          p {
+            color:#676767;
+            font-style:italic;
+          }
+          a {
+            color:#999;
+            font-size:14px;
+            &:hover {
+              color:magenta;
+            }
+            -webkit-transition: .3s;
+          	-moz-transition: .3s;
+          	transition: .3s;
+          }
+        }
         .close-btn {
           &:hover {
             p {
-                 color:magenta;
+             color:magenta;
             }
           }
          }
 
         h2 {
-          top: 38px;
           position: relative;
-          left: 62px;
-          color:magenta;
+          color:#fff;
           text-transform:uppercase;
           letter-spacing:2px;
         }
@@ -203,30 +225,32 @@ body {
         }
         .circle-button {
           position:relative;
-          top:90px;
-          left:50px;
+          top: -32px;
+          left: 120px;
           .half-circle {
+              background:#333;
               position:absolute;
               text-align:center;
               width: 80px;
               height: 40px;
-              color:#fff;
-              padding:17px -0 0 0;
-              border-top-left-radius: 80px;
-              border-top-right-radius: 80px;
-              border: 2px solid #fff;
+              color:#888;
+              padding:14px -0 0 0;
+              border-top-left-radius: 90px;
+              border-top-right-radius: 90px;
+              border: 2px solid #333;
               border-bottom: 0;
               -webkit-box-sizing: border-box;
               -moz-box-sizing: border-box;
               box-sizing: border-box;
-              -webkit-transition: .9s;
-            	-moz-transition: .9s;
-            	transition: .9s;
+              -webkit-transition: .4s;
+            	-moz-transition: .4s;
+            	transition: .4s;
               &:hover {
-                border: 2px solid white;
+                border: 2px solid #222;
                 //border-top: 0;
-                color:#000;
-                background:white;
+                color:magenta;
+                background:#222;
+                //font-weight:bold;
                 //padding:2px -0 0 0;
                 //text-decoration:underline;
               }
@@ -234,21 +258,22 @@ body {
                 
                 border-top-left-radius: 0px;
                 border-top-right-radius: 0px;
-                border-bottom-left-radius: 80px;
-                border-bottom-right-radius: 80px;
+                border-bottom-left-radius: 90px;
+                border-bottom-right-radius: 90px;
                 border-bottom: 2px;
-                background:#000;
-                color:white;
+                color:#888;
                 padding:0px -0 0 0;
-                top:40px;
-                border: 2px solid white;
+                top:38px;
+                border: 2px solid #333;
                 border-top: 0;
                 
                 &:hover {
-                  border: 2px solid white;
+                  border: 2px solid #222;
                   border-top: 0;
-                  color:#000;
-                  background:white;
+                  color:magenta;
+                  
+                  //color:#000;
+                 // background:white;
                   //padding:2px -0 0 0;
                   //text-decoration:underline;
                   
@@ -286,8 +311,8 @@ body {
       	-moz-transition: .3s;
       	transition: .3s;
       	&:hover {
-      	  &.orange {
-            color:#c79949;
+      	  &.blueish {
+            color:#5974FF;
           }
           &.purple {
             color:#8a49c7;
@@ -359,17 +384,34 @@ body {
           > a {
             text-indent:-9000em;
           }
+          &:hover {
+            p img {
+              opacity:0;
+              &.back-highlight {
+                opacity:1;
+              }
+            }
+        	}
           p {
             position:absolute;
             top:32px;
             left:32px;
             cursor:pointer;
+            
             -webkit-transition: .3s;
           	-moz-transition: .3s;
           	transition: .3s;
             img {
-              position:relative;
+              position:absolute;
               top:5px;
+              -webkit-transition: .3s;
+              -moz-transition: .3s;
+              transition: .3s;
+              &.back-highlight {
+                opacity:0;
+                position:relative;
+                left:0;
+              }
             }
           }
           &.close-contact {
