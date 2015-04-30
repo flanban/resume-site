@@ -42,9 +42,12 @@ $( document ).ready(function() {
   $('.slider-link').click(function() {
     sliderStart();
   });
-  $("body").on("click",".close-slider", function(){
+  $("body").on("click",".close-slider", function(e){
     // autohide dropdown items $('.drop').hide();
     sliderEnd();
+    if ($(this).hasClass('resume-close')) {
+      hideSubNav(this, e)
+    }
   });
 
 });

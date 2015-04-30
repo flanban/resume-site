@@ -1,26 +1,24 @@
+function showSubNav(e) {
+  $(e).children('div').fadeIn();
+}  
+function hideSubNav(e) {
+  $('.drop').fadeOut();
+}
 $( document ).ready(function() {
-  
-  
-  function hideLetters() {
-    $('.big-letter').fadeOut()
-  }
-  function showLetters() {
-    $('.big-letter').show()
-  }
-  
-  $(".square-normal").click(function (e){
+
+
+
+
+  // SHOW SUBNAV
+  $(".square-normal").click(function ( e){
     e.preventDefault;
-    $(this).children('div').fadeIn();
-    
-    //hideLetters()
+    showSubNav(this, e);
   });
   
+  // CLOSE SUBNAV
   $(".close-btn").click(function (e){
     e.preventDefault;
-    // does sketchy ajjax things. why did i put this here?
-    e.stopPropagation();
-    $('.drop').fadeOut();
-    
-    //showLetters()
+    e.stopPropagation(); // does sketchy ajjax things. why did i put this here?
+    hideSubNav(this, e)
   });
 });
