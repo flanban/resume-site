@@ -13,7 +13,6 @@ Rails.application.routes.draw do
 
   root 'static_pages#index'
   get 'static_pages/index'
-  get 'static_pages/download'
   get 'about' => 'static_pages#about', :as => 'about'
   get 'resume' => 'static_pages#resume', :as => 'resume'
   get 'static_pages/resume_pdf'
